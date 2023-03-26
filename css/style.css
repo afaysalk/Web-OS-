@@ -1,27 +1,54 @@
 
-
 /**********/
-/* HEADER */
+/* CONFIG */
 /**********/
-
-.navbar{
-background-color: antiquewhite;
-width: 100%;
-padding: 2rem;
-padding-bottom: 0;
-font-weight: bold;
-font-size: 30px;
-display: flex;
+.body {
+  height: 100vh;
+  width: 100vw;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+/**********/
+/*BACKGROUND*/
+/**********/
+#screen{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.background{
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
 
 /**********/
 /* HERO */
 /**********/
 .hero{
-    height: 70vh;
-    padding-top: 2rem;
-    background-color: antiquewhite;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+  position: relative;
+  z-index: 100;
+    
     }
 
 #drag {
@@ -30,57 +57,26 @@ display: flex;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     text-align: center;
+    width: 30vw;
+    height: 30rem;
   }
   
-  #mydivheader {
-    padding: 10px;
+  #titlebar {
+    
+    padding: 1px;
     cursor: move;
     z-index: 10;
     background-color: #2196F3;
     color: #fff;
   }
 
+  #titlebar h5 {
+    font-family: 'Viga', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size:1rem;
+    
+  }
 
 
   
-/**********/
-/* PROJECTS */
-/**********/
-.projects{
-    width: 100vh;
-          height: 100vw;
-          transform: rotate(-90deg) translateX(-100vh);
-          transform-origin: top left;
-          overflow-y: scroll;
-          overflow-x: hidden;
-          position: absolute;
-    }
-
-    .slide {
-        width: 50vw;
-        height: 50vh;
-      }
-      .wrapper {
-        display: flex;
-        flex-direction: row;
-        width: 200vw;
-        
-        transform: rotate(90deg) translateY(-100vh);
-        transform-origin: top left;
-      }
-      .one {
-        background: #efdefe;
-      }
-      .two {
-        background: #a3f3d3;
-      }
-      .three {
-        background: #0bbaa0;
-      }
-      .four {
-        background: #00dfdf;
-      }    
-
-      
-        
-    
