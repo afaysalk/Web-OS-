@@ -15,22 +15,25 @@
   <section class="hero">    
       <!-- Draggable DIV -->
   
-    <div id="drag">
+    <div id="home" class="window">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="titlebar"><h5>about.txt</h5></div>
+    <div id="homeheader" class="bar"><div class="dot"></div><div class="dot"></div><h5>about.txt</h5><div class="right"></div></div>
     <p>Move</p>
     <p>this</p>
     <p>DIV</p>
+    </div>
 
-    <div id="drag">
+    <div id="projects" class="window">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="titlebar"><h5>about.txt</h5></div>
+    <div id="projectsheader" class="bar"><h5>about.txt</h5></div>
     <p>Move</p>
     <p>this</p>
     <p>DIV</p>
 
 
   </div>
+
+  
 </section>
 
 
@@ -40,13 +43,66 @@
 
 
 
-  <div class="wallpaper">
-      <p>Background text</p>
-      <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
+  <div class="shortcuts" id="tab">
+        <div class="column" id="left">
+              <div class="icon" id="home_icon" onclick="showStuff('home')">
+                    <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
+                     <p>Background text</p>
+              </div>
+              <div class="icon" id="projects_icon" onclick="showStuff('projects')">
+                <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
+                 <p>Background text</p>
+          </div>
+        </div>
+        <div class="column" id="middle">
+          <div class="icon">
+            <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
+             <p>Background text</p>
+      </div>
+        </div>
+        <div class="column" id="right">
+          <div class="icon">
+            <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
+             <p>Background text</p>
+      </div>
+        </div>
+      
       
 
   </div>
 </div>
+
+<script type="text/javascript">
+  // Get the tab element
+  var btnContainer = document.getElementById("tab");
+
+  // Get all buttons inside with tabbutton
+  var btns = btnContainer.getElementsByClassName("icon");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+  // Toggle displays
+  function showStuff(id) {
+    
+    document.getElementById("home").classList.add('window-transition');
+    document.getElementById("home").classList.add('window-hidden');
+    document.getElementById("projects").classList.add('window-transition');
+    document.getElementById("projects").classList.add('window-hidden');
+    document.getElementById(id).style.display = "block";
+    document.getElementById(id).clientWidth;
+    document.getElementById(id).classList.remove('window-hidden');
+    
+  }
+</script>
+
+
 
 
 </section>

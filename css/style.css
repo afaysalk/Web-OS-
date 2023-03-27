@@ -5,7 +5,10 @@
 .body {
   height: 100vh;
   width: 100vw;
+  
 }
+
+
 
 
 
@@ -25,13 +28,15 @@
 /*BACKGROUND*/
 /**********/
 #screen{
+  background-color: #e0aa07;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .background{
-  color: #999999;
+  color: #ebe9e3;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,32 +56,126 @@
     
     }
 
-#drag {
+
+.window{
+  pointer-events:auto;
+  background-color: #EEE8D9;
+  border: 3px solid #000000;
+  border-bottom: 8px solid #000000;
+  border-right: 8px solid #000000;
+  border-radius: 4%;
+}
+
+.window-hidden {
+	display: none;
+  pointer-events:none;
+}
+
+
+.window-transition.window-hidden {
+	display: block;
+	opacity: 0;
+}
+
+.window-transition {
+	transition: opacity 1s ease;
+  
+}
+
+
+.bar{
+  display: flex;
+  
+ 
+  height: 9%;
+  border-bottom: 3px solid #000000;}
+
+.bar h5 {
+  width: 50%;
+  margin:auto;
+  bottom: 25%;
+  font-family: 'Viga', sans-serif;
+  color: #000000;
+  font-size:1rem;
+}
+
+.dot {
+  align-self: start;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  
+}
+
+.right{
+  width: 40px;
+}
+
+
+
+
+#home {
     position: absolute;
     z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
+    text-align: center;
+    width: 30vw;
+    height: 30rem;
+    left: 20%;
+    top: 5rem;
+  }
+  
+  #homeheader {
+    cursor: move;
+    z-index: 10;
+  }
+
+
+
+  
+  #projects {
+    position: absolute;
+    z-index: 9;
     text-align: center;
     width: 30vw;
     height: 30rem;
   }
   
-  #titlebar {
-    
-    padding: 1px;
+  #projectsheader {
     cursor: move;
     z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
-  }
-
-  #titlebar h5 {
-    font-family: 'Viga', sans-serif;
-    text-decoration: none;
-    color: #000000;
-    font-size:1rem;
-    
   }
 
 
-  
+
+
+/**********/
+/*SHORTCUTS*/
+/**********/
+
+.icon{
+  width: min-content;
+}
+
+.shortcuts{
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+#middle {
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
+}
+
+#right {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
