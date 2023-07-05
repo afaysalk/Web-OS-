@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faysal Khaldi - Code, Design and Stuff </title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+<body onload="hideLoadingDiv()">
+  <!-- Loading Page -->
+<div class="loading" id="loading" name="loading">
+  <div class="splash">
+  <img src="assets/splash.png" alt="">
+  <h5 id="tips"></h5>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" id="blue-bar" role="progressbar"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    </div>
+  </div>
+</div>
 
 
 <div id="screen">
-  <section class="hero">    
+  <section class="hero" id="hero">    
       <!-- Draggable DIV -->
   
-    <div id="home" class="window">
+    <div id="home" class="window main">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
     <div id="homeheader" class="bar"><div class="dot"></div><div class="dot"></div><h5>about.txt</h5><div class="right"></div></div>
     <p>Move</p>
@@ -23,13 +34,74 @@
     <p>DIV</p>
     </div>
 
-    <div id="projects" class="window">
+    <div id="projects" class="window main">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
     <div id="projectsheader" class="bar"><h5>about.txt</h5></div>
     <p>Move</p>
     <p>this</p>
     <p>DIV</p>
 
+    
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="icons/rectangle.svg" alt="">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="icons/circle.svg" alt="">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="icons/triangle.svg" alt="">
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="icons/brush.svg" alt="">
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="icons/eraser.svg" alt="">
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5">
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Canvas</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
 
   </div>
 
@@ -45,26 +117,35 @@
 
   <div class="shortcuts" id="tab">
         <div class="column" id="left">
-              <div class="icon" id="home_icon" onclick="showStuff('home')">
-                    <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
-                     <p>Background text</p>
+              <div class="icon" id="home_icon " onclick="showStuff('home')">
+                    <img src="assets/about.png" />
+                     <p>About</p>
               </div>
               <div class="icon" id="projects_icon" onclick="showStuff('projects')">
-                <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
-                 <p>Background text</p>
+                <img src="assets/projects.png" alt="background" />
+                 <p>My Projects</p>
           </div>
+          <div class="icon" id="projects_icon" onclick="showStuff('hero')">
+            <img src="assets/contact.png" alt="background" />
+             <p>Contact</p>
+      </div>
         </div>
         <div class="column" id="middle">
           <div class="icon">
-            <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
-             <p>Background text</p>
+            <img src="assets/cv.png" alt="background" />
+             <p>CV</p>
       </div>
         </div>
         <div class="column" id="right">
           <div class="icon">
-            <img src="http://nuclearpixel.com/content/icons/2010-02-09_stellar_icons_from_space_from_2005/earth_128.png" alt="background" />
-             <p>Background text</p>
+            <img src="assets/paint.png" alt="background" />
+             <p>Draw</p>
       </div>
+      <div class="column" id="right">
+        <div class="icon">
+          <img src="assets/web.png" alt="background" />
+           <p>This Website</p>
+    </div>
         </div>
       
       
@@ -100,6 +181,7 @@
     document.getElementById(id).classList.remove('window-hidden');
     
   }
+
 </script>
 
 
