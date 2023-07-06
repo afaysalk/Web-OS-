@@ -14,8 +14,9 @@ function hideLoadingDiv() {
 
 // Make the DIV element draggable:
 
-dragElement(document.getElementById("projects"));
-dragElement(document.getElementById("home"));
+  
+dragElement(document.getElementById("about"));
+dragElement(document.getElementById("error"));
 
 
 function dragElement(elmnt) {

@@ -42,20 +42,30 @@
     </div>
   </div>
   
-  <section class="hero" id="hero">    
+  <div class="hero" id="hero">    
       <!-- Draggable DIV -->
       
   
-    <div id="home" class="window main">
+    <div id="about" class="window main">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="homeheader" class="bar"><div class="dot"></div><div class="dot"></div><h5>about.txt</h5><div class="right"></div></div>
+    <div id="aboutheader" class="bar"><h5>about_final(2).doc</h5><div class="right"></div></div>
     <p>Move</p>
     <p>this</p>
     <p>DIV</p>
     </div>
 
+    <div id="error" class="window main">
+      <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+      <div id="errorheader" class="bar"><h5>Error</h5><div class="right"></div></div>
+      <p>Move</p>
+      <p>this</p>
+      <p>DIV</p>
+      </div>
+
+    
+    <!-- PAINT
     <div id="projects" class="window main">
-    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    
     <div id="projectsheader" class="bar"><h5>about.txt</h5></div>
     <p>Move</p>
     <p>this</p>
@@ -124,10 +134,10 @@
       </section>
     </div>
 
-  </div>
+  </div> -->
 
   
-</section>
+</div>
 
 
 
@@ -192,10 +202,9 @@
   // Toggle displays
   function showStuff(id) {
     
-    document.getElementById("home").classList.add('window-transition');
-    document.getElementById("home").classList.add('window-hidden');
-    document.getElementById("projects").classList.add('window-transition');
-    document.getElementById("projects").classList.add('window-hidden');
+ 
+    document.getElementById("hero").classList.add('window-transition');
+    document.getElementById("hero").classList.add('window-hidden');
     document.getElementById(id).style.display = "block";
     document.getElementById(id).clientWidth;
     document.getElementById(id).classList.remove('window-hidden');
