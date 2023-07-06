@@ -172,3 +172,18 @@ saveImg.addEventListener("click", () => {
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => isDrawing = false);
+
+
+
+//display time
+function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+    }
+    
+    function display_ct() {
+        var x = new Date()
+        var x1=x.toUTCString();// changing the display to UTC string
+        document.getElementById('ct').innerHTML = x1;
+        tt=display_c();
+         }

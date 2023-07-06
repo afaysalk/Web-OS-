@@ -19,8 +19,12 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+p{
+  font-family: 'Inter', sans-serif;
 
+}
 
 /**********/
 /*LOADING*/
@@ -58,7 +62,7 @@ width: 25%;
 /*BACKGROUND*/
 /**********/
 #screen{
-  background-color: #e0aa07;
+  background-image: #e0aa07;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -72,6 +76,55 @@ width: 25%;
   left: 0;
   z-index: -100;
 }
+
+
+
+/**********/
+/*BAR*/
+/**********/
+
+.taskbar{
+  margin: 3em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  background-color: #EEE8D9;
+  height: 3em!important;
+  border: 3px solid #000000;
+  border-bottom: 8px solid #000000;
+  border-right: 8px solid #000000;
+  border-radius: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task_content{
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+#task_middle{
+  margin-left: 10%;
+}
+
+
+
+.taskbar img{
+  width: 35px;
+  margin-left: 5%;
+}
+
+.taskbar p{
+  font-size:large;
+  margin-left: 10%;
+  margin-bottom: 0!important;
+}
+
+
+
+
+
 
 /**********/
 /* HERO */
@@ -151,7 +204,7 @@ width: 25%;
 
 
 
-#home {
+#about {
     position: absolute;
     z-index: 9;
     text-align: center;
@@ -161,11 +214,26 @@ width: 25%;
     top: 5rem;
   }
   
-  #homeheader {
+  #aboutheader {
     cursor: move;
     z-index: 10;
   }
 
+
+  #error {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    width: 30vw;
+    height: 30rem;
+    left: 20%;
+    top: 5rem;
+  }
+  
+  #errorheader {
+    cursor: move;
+    z-index: 10;
+  }
 
 
   
