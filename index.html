@@ -1,69 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faysal Khaldi - Code, Design and Stuff </title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  </head>
-<body onload="hideLoadingDiv() ,display_ct()" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faysal Khaldi - Code, Design and Stuff </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body onload="hideLoadingDiv() ,display_ct()">
   <!-- Loading Page -->
-<div class="loading" id="loading" name="loading">
-  <div class="splash">
-  <img src="assets/splash.png" alt="">
-  <h5 id="tips"></h5>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped" id="blue-bar" role="progressbar"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-    </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="screen">
-  
-  
-  
-
-  <img src="assets/wallpaper.jpg" alt="wallpaper" style="z-index: -100;position: absolute;max-width: 100%">
-
-  <div class="taskbar"> 
-    <div class="task_content" id="task_left">
-      <img src="assets/taskbar_icon.png" alt="icon">
-      <p>Projects </p>
-      <p>About </p>
-      <p>Log </p>
-    </div>
-    <div class="task_content" id="task_middle"> <p>home/screen/</p></div>
-    <div class="task_content" id="task_right" >
-        <span id='ct' ></span>
+  <div class="loading" id="loading" name="loading">
+    <div class="splash">
+      <img src="assets/splash.png" alt="">
+      <h5 id="tips"></h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" id="blue-bar" role="progressbar" aria-valuenow="20"
+          aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
     </div>
   </div>
-  
-  <div class="hero" id="hero">    
+
+
+  <div id="screen">
+
+
+
+
+    <img src="assets/wallpaper.jpg" alt="wallpaper" style="z-index: -100;position: absolute;max-width: 100%">
+
+    <div class="taskbar">
+      <div class="task_content" id="task_left">
+        <img src="assets/taskbar_icon.png" alt="icon">
+        <p>Projects </p>
+        <p>About </p>
+        <p>Log </p>
+      </div>
+      <div class="task_content" id="task_middle">
+        <p>home/screen/</p>
+      </div>
+      <div class="task_content" id="task_right">
+        <span id='ct'></span>
+      </div>
+    </div>
+
+    <div class="hero" id="hero">
       <!-- Draggable DIV -->
-      
-  
-    <div id="about" class="window main">
-    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="aboutheader" class="bar"><h5>about_final(2).doc</h5><div class="right"></div></div>
-    <p>Move</p>
-    <p>this</p>
-    <p>DIV</p>
-    </div>
 
-    <div id="error" class="window main">
-      <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-      <div id="errorheader" class="bar"><h5>Error</h5><div class="right"></div></div>
-      <p>Move</p>
-      <p>this</p>
-      <p>DIV</p>
+
+      <div id="about" class="window main">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="about_header" class="bar">
+          <h5>about_final(2).doc</h5>
+          <div class="right"></div>
+        </div>
+
+        <div id="about_content">
+          <div id="about_hero">
+            <div id="hello">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" baseProfile="full"
+                width="700px" height="500px" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet" id="svg_document"
+                style="zoom: .5;">
+          
+                <defs id="svg_document_defs"></defs>
+                <g id="main_group">
+                  
+                  
+                  <path stroke="black" stroke-linejoin="round" id="path1" stroke-width="15.75px"
+                    d="M23,213 C54.5,213 165.800003,98.900002 118.199997,98.200005 C70.599998,97.5 75.5,238.899994 75.5,238.899994 C75.5,238.899994 77.599998,172.399994 116.099998,172.399994 C154.599991,172.399994 109.799995,237.5 143.399994,239.600006 C177,241.699997 225.300003,175.899994 190.300003,174.5 C155.300003,173.100006 156,236.100006 202.899994,238.199997 C249.800003,240.300003 303.699982,105.900002 262.399994,103.099998 C221.099991,100.300003 228.800003,234.699997 270.799988,237.5 C312.799988,240.300003 373.699982,104.5 331,102.400002 C288.299988,100.300003 293.199982,236.800003 337.299988,237.5 C365.299988,236.100006 356.199982,171.699997 392.600006,173.100006 C412.899994,174.5 421.299988,189.899994 420.600006,189.199997 C419.899994,188.5 426.899994,236.800003 389.799988,236.800003 C352.699982,236.800003 356.899994,171.699997 392.600006,173.100006 C424.799988,175.899994 420.600006,203.899994 421.299988,196.199997 C421.299988,196.899994 444.399994,189.199997 447.899994,173.800003 "
+                    fill="none" stroke-linecap="round" transform="">
+                    <animate dur="5" values="0,1739;1739,0;" begin="0; animate1.end+5s" id="animateSig1" repeatCount="0"
+                      fill="freeze" attributeName="stroke-dasharray" attributeType="XML"></animate>
+                  </path>
+                  <circle stroke="black" id="circle1" stroke-width="3px" cy="231.5px" fill="black" r="10.5px"
+                    cx="450.5px" transform="">
+                    <set dur="5.25s" begin="animateSig1.begin" id="set1" repeatCount="0" attributeName="r" to="0"
+                      attributeType="XML"></set>
+                    <animate additive="replace" dur="0.25s" begin="animateSig1.end+0.25s" id="animate1" values="0;10.5;"
+                      accumulate="none" repeatCount="0" fill="freeze" attributeName="r" attributeType="XML"></animate>
+                  </circle>
+                </g>
+              </svg>
+            </div>
+            <div id="presentation">I'm me</div>
+          </div>
+          <div id="portrait">
+            
+            <img src="assets/man.png" alt="">
+          </div>
+
+        </div>
+
       </div>
 
-    
-    <!-- PAINT
+      <div id="error" class="window main">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="error_header" class="bar">
+          <h5>Error</h5>
+          <div class="right"></div>
+        </div>
+        <p>Move</p>
+        <p>this</p>
+        <p>DIV</p>
+      </div>
+
+
+      <!-- PAINT
     <div id="projects" class="window main">
     
     <div id="projectsheader" class="bar"><h5>about.txt</h5></div>
@@ -136,8 +186,8 @@
 
   </div> -->
 
-  
-</div>
+
+    </div>
 
 
 
@@ -145,82 +195,83 @@
 
 
 
-  <div class="shortcuts" id="tab">
-        <div class="column" id="left">
-              <div class="icon" id="home_icon " onclick="showStuff('home')">
-                    <img src="assets/about.png" />
-                     <p>About</p>
-              </div>
-              <div class="icon" id="projects_icon" onclick="showStuff('projects')">
-                <img src="assets/projects.png" alt="background" />
-                 <p>My Projects</p>
-          </div>
-          <div class="icon" id="projects_icon" onclick="showStuff('hero')">
-            <img src="assets/contact.png" alt="background" />
-             <p>Contact</p>
-      </div>
+    <div class="shortcuts" id="tab">
+      <div class="column" id="left">
+        <div class="icon" id="home_icon " onclick="showStuff('home')">
+          <img src="assets/about.png" />
+          <p>About</p>
         </div>
-        <div class="column" id="middle">
-          <div class="icon">
-            <img src="assets/cv.png" alt="background" />
-             <p>CV</p>
-      </div>
+        <div class="icon" id="projects_icon" onclick="showStuff('projects')">
+          <img src="assets/projects.png" alt="background" />
+          <p>My Projects</p>
         </div>
-        <div class="column" id="right">
-          <div class="icon">
-            <img src="assets/paint.png" alt="background" />
-             <p>Draw</p>
+        <div class="icon" id="projects_icon" onclick="showStuff('hero')">
+          <img src="assets/contact.png" alt="background" />
+          <p>Contact</p>
+        </div>
+      </div>
+      <div class="column" id="middle">
+        <div class="icon">
+          <img src="assets/cv.png" alt="background" />
+          <p>CV</p>
+        </div>
       </div>
       <div class="column" id="right">
         <div class="icon">
-          <img src="assets/web.png" alt="background" />
-           <p>This Website</p>
-    </div>
+          <img src="assets/paint.png" alt="background" />
+          <p>Draw</p>
         </div>
-      
-      
-
-  </div>
-</div>
-
-<script type="text/javascript">
-  // Get the tab element
-  var btnContainer = document.getElementById("tab");
-
-  // Get all buttons inside with tabbutton
-  var btns = btnContainer.getElementsByClassName("icon");
-
-  // Loop through the buttons and add the active class to the current/clicked button
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-
-  // Toggle displays
-  function showStuff(id) {
-    
- 
-    document.getElementById("hero").classList.add('window-transition');
-    document.getElementById("hero").classList.add('window-hidden');
-    document.getElementById(id).style.display = "block";
-    document.getElementById(id).clientWidth;
-    document.getElementById(id).classList.remove('window-hidden');
-    
-  }
-
-</script>
+        <div class="column" id="right">
+          <div class="icon">
+            <img src="assets/web.png" alt="background" />
+            <p>This Website</p>
+          </div>
+        </div>
 
 
 
+      </div>
+    </div>
 
-</section>
+    <script type="text/javascript">
+      // Get the tab element
+      var btnContainer = document.getElementById("tab");
+
+      // Get all buttons inside with tabbutton
+      var btns = btnContainer.getElementsByClassName("icon");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      // Toggle displays
+      function showStuff(id) {
+
+
+        document.getElementById("hero").classList.add('window-transition');
+        document.getElementById("hero").classList.add('window-hidden');
+        document.getElementById(id).style.display = "block";
+        document.getElementById(id).clientWidth;
+        document.getElementById(id).classList.remove('window-hidden');
+
+      }
+
+    </script>
 
 
 
-<script src="js/script.js"></script>
+
+    </section>
+
+
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
