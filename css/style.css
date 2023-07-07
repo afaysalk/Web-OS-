@@ -206,11 +206,12 @@ width: 25%;
 #about {
     position: absolute;
     z-index: 9;
-    text-align: center;
-    width: 30vw;
+   
+    width: 40vw;
     height: 30rem;
     left: 20%;
     top: 5rem;
+    text-align: center;
   }
   
   #about_header {
@@ -218,15 +219,82 @@ width: 25%;
     z-index: 10;
   }
 
+  #about_hero {
+    width: 50%;
+  }
+
+  #about_hero h2{
+    color: #000;
+    padding-left: 5%;
+    text-align: start;
+    
+  }
+
   #about_content{
     display: flex;
       align-items: flex-start;
   }
 
-  #about_presentation{
-    flex: 1;
-    padding: 20px;
+  #presentation{
+    padding-top: 5%;
+    padding-left: 5%;
   }
+  #hello{
+    text-align: start;
+    
+  }
+
+  #portrait{
+    padding-top: 3%;
+    padding-right: 3%;
+    width:100%;
+    
+  } 
+
+  #about img{
+    max-width: 100%; height: auto;
+    border: 3px solid #000000;
+  border-radius: 4%;
+  }
+
+
+  .test {
+    position: relative;
+  }
+  .test:after {
+    animation-delay: 2s;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(125, 224, 130) 50%, transparent 50%);
+    animation-name: highlight;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    
+  }
+  
+  @keyframes highlight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+  
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+  }
+
+  
+
+  
 
   
 
