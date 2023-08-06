@@ -4,9 +4,17 @@ function hideLoadingDiv() {
   setTimeout(function(){
     document.getElementById('blue-bar').classList.add('Initializing');
     document.getElementById("tips").innerHTML = "Initializing...";
+    
 },0)
+setTimeout(function(){
+    document.getElementById('blue-bar').classList.add('Plumbobs');
+    document.getElementById("tips").innerHTML = "Toggling Plumbobs...";
+    
+},900)
   setTimeout(function(){
+    
     document.getElementById('loading').classList.add('hidden');
+    
   },1000)
   }
 
@@ -17,6 +25,9 @@ function hideLoadingDiv() {
   
 dragElement(document.getElementById("about"));
 dragElement(document.getElementById("error"));
+dragElement(document.getElementById("projects"));
+dragElement(document.getElementById("paint"));
+dragElement(document.getElementById("links"));
 
 
 function dragElement(elmnt) {

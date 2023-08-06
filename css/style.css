@@ -20,6 +20,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 p{
   font-family: 'Inter', sans-serif;
@@ -35,25 +36,71 @@ p{
   background-color: #c1bcff;
   z-index: 1000;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transition: opacity 1s ease;
   display: flex;
   justify-content: center;
 }
 
-.splash{
-  padding-top: 10%;
-  height: 50%;
+
+.inner {
+  border: 2px solid #F2E8D4;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  margin: 7%;
 }
 
+.splash{
+  border: 3px solid #302F2B;
+  box-shadow: 10px 5px #302F2B;
+  border-radius: 1;
+  
+  margin: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #FFFAED;
+  padding: 0% 1% 7% 1%;
+
+  
+ 
+}
+
+
 .splash img{
-  width: fit-content;
+  
+  
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
 }
 
 .Initializing{
+
 opacity: 1;
 width: 25%;
+}
+
+.Plumbobs{
+
+  opacity: 1;
+  width: 90%;
+  }
+
+.loading h1{
+  text-align: center;
+  font-size: 500%;
+  font-family: Garamond;
+}
+
+.loading h2{
+text-align: center;
+  font-size: 150%;
+  font-family: Garamond;
 }
 
 
@@ -333,6 +380,92 @@ width: 25%;
 
 
 
+  #projects {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    left: 50%;
+    top: 55vh;
+    width: 60vw;
+    height: 40rem;
+  }
+  
+  #projects_header {
+    padding-bottom: 5%;
+    padding-top: 2%;
+    cursor: move;
+    z-index: 10;
+  }
+
+  
+  .projects_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .projects_column_left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    
+  }
+
+  .projects_column_right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    
+  }
+  
+  .projects_icon-column {
+    background-color: blue;
+    height: 100px;
+  }
+
+
+  .projects_name-column {
+    background-color: blue;
+    height: 100px;
+  }
+
+
+  .projects_folder-column {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  .projects_project-column {
+    background-color: green;
+    height: 100px;
+  }
+  
+
+
+
+
+
+  #links {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    left: 50%;
+    top: 55vh;
+    width: 30vw;
+    height: 35rem;
+  }
+  
+  #links_header {
+    padding-bottom: 5%;
+    padding-top: 2%;
+    cursor: move;
+    z-index: 10;
+  }
+
+
 
 /**********/
 /*SHORTCUTS*/
@@ -379,7 +512,22 @@ width: 25%;
 
 
 
+#paint {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  left: 50%;
+  top: 55vh;
+  width: 60vw;
+  height: 40rem;
+}
 
+#paint_header {
+  padding-bottom: 5%;
+  padding-top: 2%;
+  cursor: move;
+  z-index: 10;
+}
 
 
 .container{
